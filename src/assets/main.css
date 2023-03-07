@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #E5E5E5;
+}
+.date-tag {
+  height: 30px;
+  
+  background-color: rgba(255, 106, 44, 0.08);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.date-tag p {
+  color: rgba(255, 106, 44, 1);
+display: flex;
+  font-size: 9px;
+  font-weight: bold ;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.circle-1 {
+    width: 15.83px;
+height: 6px;
+background:#fff;
+border-radius: 4px;
+position: relative;
+bottom: 13px;
+left: 22px;
+}
+
+.circle-2 {
+        width: 15.83px;
+height: 6px;
+background:#fff;
+border-radius: 4px;
+position: relative;
+top: 13px;
+right: 22px;
+}
