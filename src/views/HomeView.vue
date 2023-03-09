@@ -45,6 +45,7 @@ const filteredEvents = computed(() => {
     e.venue.name.toLowerCase().includes(search.value)
   );
 });
+
 </script>
 
 <template>
