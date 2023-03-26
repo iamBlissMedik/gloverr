@@ -48,7 +48,7 @@ const goToTicket = (e) => {
           </p>
         </div>
         <!-- BUTTON -->
-        <div>
+        <div class="w-fit">
           <a :href="link">
             <ButtonVue @buttonClick="goToTicket" :index="index" />
           </a>
