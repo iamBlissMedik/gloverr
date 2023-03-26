@@ -17,6 +17,3 @@ const searchT = (e) => {
     </div>
   </div>
 </template>
-<style scoped>
-
-</style>
