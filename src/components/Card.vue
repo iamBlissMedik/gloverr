@@ -12,10 +12,8 @@ const props = defineProps({
 // extract date
 const dateFormat = (dateData) =>
   new Date(dateData).toDateString().split(" ").slice(1, 3).reverse().join(" ");
-
 //   to get the link
 const link = ref("");
-
 // navigate to event
 const goToTicket = (e) => {
   link.value = props.event.url;
@@ -25,7 +23,6 @@ const goToTicket = (e) => {
   <!-- event card 1 -->
   <div class="grid items-center bg-card p-5 rounded card">
     <!-- event image -->
-
     <div>
       <img :src="event.artist.image_url" alt="" class="w-full h-60" />
     </div>
@@ -66,7 +63,3 @@ const goToTicket = (e) => {
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

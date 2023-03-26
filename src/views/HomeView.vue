@@ -5,12 +5,9 @@ import FeaturedEvents from "../components/FeaturedEvents.vue";
 import AllEvents from "../components/AllEvents.vue";
 import axios from "axios";
 import { onMounted, ref, computed } from "vue";
-
 const data = ref([]);
 const isLoading = ref(null);
-
 const search = ref("");
-
 onMounted(() => {
   axios
     .get(
@@ -18,7 +15,6 @@ onMounted(() => {
     )
     .then((response) => {
       isLoading.value = true;
-
       data.value = response.data.map((e) => {
         if (!e?.artist) {
           e.artist = {
@@ -34,20 +30,16 @@ onMounted(() => {
       console.log(error.message);
     });
 });
-
 const onInput = (e) => {
   search.value = e.toLowerCase().trim();
 };
-
 // filtered events
 const filteredEvents = computed(() => {
   return data.value.filter((e) =>
     e.venue.name.toLowerCase().includes(search.value)
   );
 });
-
 </script>
-
 <template>
   <div class="mx-auto px-8 py-8 lg:px-20 lg:py-10 z-10" v-if="isLoading">
     <header>
@@ -55,7 +47,7 @@ const filteredEvents = computed(() => {
     </header>
     <main>
       <SearchBar @inputs="onInput" />
-      <FeaturedEvents  />
+      <FeaturedEvents />
       <AllEvents :filteredEvents="filteredEvents" />
     </main>
   </div>

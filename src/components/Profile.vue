@@ -11,13 +11,12 @@
     </div>
     <!-- drop down icon -->
     <div class="bg-dropDown rounded-sm text-user_name font-normal p-1">
-      <i class="fa   fa-caret-down" aria-hidden="true"></i>
+      <i class="fa fa-caret-down" aria-hidden="true"></i>
     </div>
   </div>
 </template>
-
 <style scoped>
-div{
-cursor: pointer;
+div {
+  cursor: pointer;
 }
 </style>

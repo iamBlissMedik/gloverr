@@ -1,3 +1,10 @@
+<script setup>
+const emit = defineEmits(["buttonClick"]);
+const props = defineProps(["index"]);
+const buttonClick = (index) => {
+  emit("buttonClick", index);
+};
+</script>
 <template>
   <div>
     <button
@@ -8,11 +15,3 @@
     </button>
   </div>
 </template>
-
-<script setup>
-const emit = defineEmits(["buttonClick"])
-const props = defineProps(["index"])
-const buttonClick = (index) => {
-emit("buttonClick",index)
-};
-</script>

@@ -1,3 +1,11 @@
+<script setup>
+import Card from "./Card.vue";
+const props = defineProps({
+  filteredEvents: {
+    type: Array,
+  },
+});
+</script>
 <template>
   <!-- all events -->
   <div>
@@ -19,17 +27,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import Card from "./Card.vue";
-
-const props = defineProps({
-  filteredEvents: {
-    type: Array,
-  },
-});
-</script>
-
 <style scoped>
 .noEvent {
   color: red;
