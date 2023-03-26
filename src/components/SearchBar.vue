@@ -7,7 +7,7 @@ const searchT = (e) => {
 <template>
   <div class="flex items-center relative">
     <input
-      class="rounded-md px-6 py-2 border-0 outline-event_text"
+      class="rounded-md px-6 py-2 border-0 w-full sm:w-5/12 outline-event_text"
       type="text"
       placeholder="Search"
       @input="searchT"
@@ -18,7 +18,5 @@ const searchT = (e) => {
   </div>
 </template>
 <style scoped>
-input {
-  width: 40%;
-}
+
 </style>
